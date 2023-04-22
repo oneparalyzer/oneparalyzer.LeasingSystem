@@ -21,4 +21,9 @@ public sealed class FullName : ValueObject
         yield return Surname;
         yield return Patronymic;
     }
+
+    public override string ToString()
+    {
+        return $"{Surname} {Name} {Patronymic}";
+    }
 }

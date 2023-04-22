@@ -29,6 +29,12 @@ public class AuthController : ControllerBase
     {
         var loginResponse = new LoginResponse();
 
+        if (!ModelState.IsValid)
+        {
+            loginResponse.IsOk = false;
+            loginResponse.Errors.Add("Ошибка валидации");
+        }
+
         User? user = await _context.Users.Include(x => x.Roles).FirstOrDefaultAsync(x =>
             x.Email == loginRequest.Email &&
             x.PasswordHash == HasherHelper.CreateHash(loginRequest.Password));

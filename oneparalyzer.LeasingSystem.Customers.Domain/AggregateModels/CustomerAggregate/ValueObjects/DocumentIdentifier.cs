@@ -15,6 +15,7 @@ public sealed class DocumentIdentifier : ValueObject
 
     protected override IEnumerable<object> GetEqualityComponents()
     {
-        throw new NotImplementedException();
+        yield return Seria; 
+        yield return Number;
     }
 }

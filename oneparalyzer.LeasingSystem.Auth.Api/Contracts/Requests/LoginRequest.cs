@@ -2,7 +2,7 @@
 
 namespace oneparalyzer.LeasingSystem.Auth.Api.Contracts.Requests;
 
-public sealed record LoginRequest
+public sealed class LoginRequest
 {
     public string Email { get; set; } = null!;
 

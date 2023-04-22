@@ -3,6 +3,7 @@ using oneparalyzer.LeasingSystem.Auth.Api.Data;
 using oneparalyzer.LeasingSystem.Auth.Api.Services.Implementations;
 using oneparalyzer.LeasingSystem.Auth.Api.Services.Interfaces;
 using oneparalyzer.LeasingSystem.Auth.Api.Settings;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 {
@@ -13,6 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
     builder.Services.AddScoped<IJwtTokenService, JwtTokenService>();
+    builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
     builder.Services.AddCors();
 }
 

@@ -20,7 +20,10 @@ public class Document : Entity<Guid>
         IssuingDate = issuingDate;
         Comment = comment;
         IssuingDepartment = issuingDepartment;
-        IssuingDepartmentId = issuingDepartment.Id;
+        if (issuingDepartment is not null)
+        {
+            IssuingDepartmentId = issuingDepartment.Id;
+        }
     }
 
     private Document(Guid id) : base(id)
