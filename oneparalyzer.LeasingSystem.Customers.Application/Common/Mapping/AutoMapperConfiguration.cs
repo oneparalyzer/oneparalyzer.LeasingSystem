@@ -16,7 +16,7 @@ public sealed class AutoMapperConfiguration : Profile
             .ForPath(dst => dst.Patronymic, opt => opt.MapFrom(src => src.FullName.Patronymic))
             .ForPath(dst => dst.CustomerId, opt => opt.MapFrom(src => src.Id));
 
-        CreateMap<Customer, GetByIdCustomerDTO>()
+        CreateMap<Customer, GetCustomerByIdDTO>()
             .ForPath(dst => dst.Name, opt => opt.MapFrom(src => src.FullName.Name))
             .ForPath(dst => dst.Surname, opt => opt.MapFrom(src => src.FullName.Surname))
             .ForPath(dst => dst.Patronymic, opt => opt.MapFrom(src => src.FullName.Patronymic))

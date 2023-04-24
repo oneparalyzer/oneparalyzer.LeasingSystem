@@ -39,21 +39,21 @@ public class CustomersController : ControllerBase
     [HttpDelete("{id}/remove")]
     public async Task<IActionResult> RemoveById([FromRoute]Guid id)
     {
-        Result result = await _mediator.Send(new RemoveByIdCustomerCommand(id));
+        Result result = await _mediator.Send(new RemoveCustomerByIdCommand(id));
         return Ok(result);
     }
 
     [HttpGet("get-by-fullname")]
     public async Task<IActionResult> FindByFullName([FromBody]string fullName)
     {
-        IEnumerable<GetAllCutomersDTO> customersDTO = await _mediator.Send(new GetByFullNameQuery(fullName));
+        IEnumerable<GetAllCutomersDTO> customersDTO = await _mediator.Send(new GetCustomerByFullNameQuery(fullName));
         return Ok(customersDTO);
     }
 
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById([FromRoute]Guid id)
     {
-        GetByIdCustomerDTO customerDTO = await _mediator.Send(new GetByIdCustomerQuery(id));
+        GetCustomerByIdDTO customerDTO = await _mediator.Send(new GetCustomerByIdQuery(id));
         return Ok(customerDTO);
     }
 }

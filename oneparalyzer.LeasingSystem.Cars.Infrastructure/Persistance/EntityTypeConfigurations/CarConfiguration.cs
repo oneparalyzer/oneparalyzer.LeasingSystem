@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using oneparalyzer.LeasingSystem.Cars.Domain.AggregateModels.CarAggregate;
+using oneparalyzer.LeasingSystem.Cars.Domain.AggregateModels.PriceListAggregate.Entities;
 
 namespace oneparalyzer.LeasingSystem.Cars.Infrastructure.Persistance.EntityTypeConfigurations;
 

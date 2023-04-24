@@ -3,7 +3,7 @@ using oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggreg
 
 namespace oneparalyzer.LeasingSystem.Customers.Application.Customers.Queries.GetById;
 
-public class GetByIdCustomerDTO : GetAllCutomersDTO
+public class GetCustomerByIdDTO : GetAllCutomersDTO
 {
     public Guid? UserId { get; set; }
     public DateTime BirthDate { get; set; }

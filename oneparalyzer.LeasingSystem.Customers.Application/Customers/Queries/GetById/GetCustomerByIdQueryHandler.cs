@@ -6,18 +6,18 @@ using oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggreg
 
 namespace oneparalyzer.LeasingSystem.Customers.Application.Customers.Queries.GetById;
 
-public sealed class GetByIdCustomerQueryHandler : IRequestHandler<GetByIdCustomerQuery, GetByIdCustomerDTO>
+public sealed class GetCustomerByIdQueryHandler : IRequestHandler<GetCustomerByIdQuery, GetCustomerByIdDTO>
 {
     private readonly ICustomersDbContext _context;
     private readonly IMapper _mapper;
 
-    public GetByIdCustomerQueryHandler(ICustomersDbContext context, IMapper mapper)
+    public GetCustomerByIdQueryHandler(ICustomersDbContext context, IMapper mapper)
     {
         _context = context;
         _mapper = mapper;
     }
 
-    public async Task<GetByIdCustomerDTO> Handle(GetByIdCustomerQuery query, CancellationToken cancellationToken)
+    public async Task<GetCustomerByIdDTO> Handle(GetCustomerByIdQuery query, CancellationToken cancellationToken)
     {
         Customer? customer = await _context.Customers
             .Include(x => x.Address)
@@ -30,7 +30,7 @@ public sealed class GetByIdCustomerQueryHandler : IRequestHandler<GetByIdCustome
                 x.Id == query.CustomerId, 
                 cancellationToken);
 
-        var customerDTO = _mapper.Map<GetByIdCustomerDTO>(customer);
+        var customerDTO = _mapper.Map<GetCustomerByIdDTO>(customer);
         return customerDTO;
     }
 }

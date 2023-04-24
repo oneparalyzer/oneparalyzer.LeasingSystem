@@ -6,16 +6,16 @@ using oneparalyzer.LeasingSystem.Customers.Domain.Common;
 
 namespace oneparalyzer.LeasingSystem.Customers.Application.Customers.Commands.RemoveById;
 
-public sealed class RemoveByIdCustomerCommandHandler : IRequestHandler<RemoveByIdCustomerCommand, Result>
+public sealed class RemoveCustomerByIdCommandHandler : IRequestHandler<RemoveCustomerByIdCommand, Result>
 {
     private readonly ICustomersDbContext _context;
 
-    public RemoveByIdCustomerCommandHandler(ICustomersDbContext context)
+    public RemoveCustomerByIdCommandHandler(ICustomersDbContext context)
     {
         _context = context;
     }
 
-    public async Task<Result> Handle(RemoveByIdCustomerCommand command, CancellationToken cancellationToken)
+    public async Task<Result> Handle(RemoveCustomerByIdCommand command, CancellationToken cancellationToken)
     {
         var result = new Result();
         result.IsOk = true;

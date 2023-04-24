@@ -5,22 +5,22 @@ using oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggreg
 
 namespace oneparalyzer.LeasingSystem.Customers.Application.Customers.Queries.FindByFullName;
 
-public sealed class GetByFullNameQueryHandler : IRequestHandler<GetByFullNameQuery, IEnumerable<GetByFullNameDTO>>
+public sealed class GetCustomerByFullNameQueryHandler : IRequestHandler<GetCustomerByFullNameQuery, IEnumerable<GetCustomerByFullNameDTO>>
 {
     private readonly ICustomersDbContext _context;
     private readonly IMapper _mapper;
 
-    public GetByFullNameQueryHandler(ICustomersDbContext context, IMapper mapper)
+    public GetCustomerByFullNameQueryHandler(ICustomersDbContext context, IMapper mapper)
     {
         _context = context;
         _mapper = mapper;
     }
 
-    public async Task<IEnumerable<GetByFullNameDTO>> Handle(GetByFullNameQuery query, CancellationToken cancellationToken)
+    public async Task<IEnumerable<GetCustomerByFullNameDTO>> Handle(GetCustomerByFullNameQuery query, CancellationToken cancellationToken)
     {
         IEnumerable<Customer>? customers = _context.Customers.Where(x => x.FullName.ToString().ToLower().Contains(query.FullName.ToLower()));
 
-        var customersDTO = _mapper.Map<IEnumerable<GetByFullNameDTO>>(customers);
+        var customersDTO = _mapper.Map<IEnumerable<GetCustomerByFullNameDTO>>(customers);
 
         return customersDTO;
     }

@@ -7,7 +7,7 @@ public sealed class CarInsurance : CarDocument
 {
     private const DocumentType Insurance = DocumentType.CarInsurance;
 
-    public СarRegistrationCertificate(
+    public CarInsurance(
         Guid id,
         DocumentIdentifier documentIdentifier,
         DateTime issuingDate)
