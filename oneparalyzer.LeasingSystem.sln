@@ -47,7 +47,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "oneparalyzer.LeasingSystem.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "oneparalyzer.LeasingSystem.Employees.Domain", "oneparalyzer.LeasingSystem.Employees.Domain\oneparalyzer.LeasingSystem.Employees.Domain.csproj", "{B3F8CEF8-74E1-4AA4-BABB-393866B7F16D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{8B331ECB-56B3-4CCC-AFB5-5BBDA685F243}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{8B331ECB-56B3-4CCC-AFB5-5BBDA685F243}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
