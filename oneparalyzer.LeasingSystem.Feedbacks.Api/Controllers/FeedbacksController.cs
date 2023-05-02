@@ -19,14 +19,14 @@ public class FeedbacksController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
-        IEnumerable<GetAllFeedbacksDTO> feedbacksDTO = await _mediator.Send(new GetAllFeedbacksQuery());
-        return Ok(feedbacksDTO);
+        var result = await _mediator.Send(new GetAllFeedbacksQuery());
+        return Ok(result);
     }
 
     [HttpPut("create")]
     public async Task<IActionResult> Create(CreateFeedbackCommand command)
     {
-        await _mediator.Send(command);
-        return Ok();
+        var result = await _mediator.Send(command);
+        return Ok(result);
     }
 }

@@ -1,4 +1,4 @@
-﻿using oneparalyzer.LeasingSystem.Auth.Api.Exceptions;
+﻿
 
 namespace oneparalyzer.LeasingSystem.Auth.Api.Entities;
 
@@ -25,7 +25,7 @@ public sealed class User
         Role? role = _roles.FirstOrDefault(x => x.Title == newRole.Title);
         if (role is not null)
         {
-            throw new EntityAlreadyExistException(nameof(role));
+            throw new NotImplementedException();
         }
 
         _roles.Add(newRole);

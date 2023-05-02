@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Entities.Address">
+    <Position X="5.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAEAAAAAAAAAAAEAAAAgAAAIAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\CustomerAggregate\Entities\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Entities.City">
+    <Position X="0.5" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\CustomerAggregate\Entities\City.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Entities.Department">
+    <Position X="4.5" Y="4.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\CustomerAggregate\Entities\Department.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Entities.Document">
+    <Position X="3" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAEAAAAAAAAAAAAAAgAAIAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\CustomerAggregate\Entities\Document.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Entities.Region">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\CustomerAggregate\Entities\Region.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Entities.Street">
+    <Position X="8" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\CustomerAggregate\Entities\Street.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Customer">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>SAAAAAAAAAAAAICAAAAAAAwAAAAAAAACAAAAAACAAAA=</HashCode>
+      <FileName>AggregateModels\CustomerAggregate\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Enums.DocumentType">
+    <Position X="8" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>AggregateModels\CustomerAggregate\Enums\DocumentType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Enums.Gender">
+    <Position X="6" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\CustomerAggregate\Enums\Gender.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

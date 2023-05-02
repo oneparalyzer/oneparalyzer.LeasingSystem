@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 using oneparalyzer.LeasingSystem.Auth.Api.Constants;
 using oneparalyzer.LeasingSystem.Auth.Api.Contracts.Requests;
@@ -51,7 +52,7 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("register")]
-    public async Task<IActionResult> Register([FromBody] RegisterRequest registerRequest)
+    public async Task<IActionResult> Register([FromBody]RegisterRequest registerRequest)
     {
         var registerResponse = new RegisterResponse();
         registerResponse.IsOk = true;

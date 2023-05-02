@@ -6,9 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="AggregateModels\EmployeeAggregate\" />
-    <Folder Include="AggregateModels\OfficeAggregate\" />
-  </ItemGroup>
-
 </Project>

@@ -25,8 +25,8 @@ public class CustomersController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
-        IEnumerable<GetAllCutomersDTO> customersDTO = await _mediator.Send(new GetAllCutomersQuery());
-        return Ok(customersDTO);
+        var result = await _mediator.Send(new GetAllCutomersQuery());
+        return Ok(result);
     }
 
     [HttpPut("create")]
@@ -53,7 +53,7 @@ public class CustomersController : ControllerBase
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById([FromRoute]Guid id)
     {
-        GetCustomerByIdDTO customerDTO = await _mediator.Send(new GetCustomerByIdQuery(id));
-        return Ok(customerDTO);
+        var result = await _mediator.Send(new GetCustomerByIdQuery(id));
+        return Ok(result);
     }
 }
