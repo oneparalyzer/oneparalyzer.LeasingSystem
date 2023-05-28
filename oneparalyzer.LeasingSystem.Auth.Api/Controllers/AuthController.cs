@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 using oneparalyzer.LeasingSystem.Auth.Api.Constants;
 using oneparalyzer.LeasingSystem.Auth.Api.Contracts.Requests;

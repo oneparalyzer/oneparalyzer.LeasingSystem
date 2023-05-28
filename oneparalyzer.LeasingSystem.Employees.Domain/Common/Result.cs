@@ -16,4 +16,12 @@ public class Result
             _errors.Add(error);
         }
     }
+
+    public void AddRangeError(List<string> errors)
+    {
+        foreach (var error in errors)
+        {
+            AddError(error);
+        }
+    }
 }

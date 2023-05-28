@@ -49,11 +49,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "oneparalyzer.LeasingSystem.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{8B331ECB-56B3-4CCC-AFB5-5BBDA685F243}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oneparalyzer.LeasingSystem.Employees.Api", "oneparalyzer.LeasingSystem.Employees.Api\oneparalyzer.LeasingSystem.Employees.Api.csproj", "{1003FA1B-C90D-49D9-BBF0-BD9CBBD6B0EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "oneparalyzer.LeasingSystem.Employees.Api", "oneparalyzer.LeasingSystem.Employees.Api\oneparalyzer.LeasingSystem.Employees.Api.csproj", "{1003FA1B-C90D-49D9-BBF0-BD9CBBD6B0EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oneparalyzer.LeasingSystem.Employees.Application", "oneparalyzer.LeasingSystem.Employees.Application\oneparalyzer.LeasingSystem.Employees.Application.csproj", "{1DE89A85-6446-4716-B1DF-05886FB44510}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "oneparalyzer.LeasingSystem.Employees.Application", "oneparalyzer.LeasingSystem.Employees.Application\oneparalyzer.LeasingSystem.Employees.Application.csproj", "{1DE89A85-6446-4716-B1DF-05886FB44510}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oneparalyzer.LeasingSystem.Employees.Infrastructure", "oneparalyzer.LeasingSystem.Employees.Infrastructure\oneparalyzer.LeasingSystem.Employees.Infrastructure.csproj", "{43FC7AB0-A635-42E1-BB57-379C2EA87EB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "oneparalyzer.LeasingSystem.Employees.Infrastructure", "oneparalyzer.LeasingSystem.Employees.Infrastructure\oneparalyzer.LeasingSystem.Employees.Infrastructure.csproj", "{43FC7AB0-A635-42E1-BB57-379C2EA87EB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oneparalyzer.LeasingSystem.Leasing.Api", "oneparalyzer.LeasingSystem.Leasing.Api\oneparalyzer.LeasingSystem.Leasing.Api.csproj", "{95C26311-A8C2-41CD-9EE5-99189706B8DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oneparalyzer.LeasingSystem.Leasing.Domain", "oneparalyzer.LeasingSystem.Leasing.Domain\oneparalyzer.LeasingSystem.Leasing.Domain.csproj", "{C947694B-20B3-4CD0-B78E-23F8D1C0B514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oneparalyzer.LeasingSystem.Leasing.Infrastructure", "oneparalyzer.LeasingSystem.Leasing.Infrastructure\oneparalyzer.LeasingSystem.Leasing.Infrastructure.csproj", "{8DB82F18-3F1E-45BF-AFCD-51E336FF5FBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oneparalyzer.LeasingSystem.Leasing.Application", "oneparalyzer.LeasingSystem.Leasing.Application\oneparalyzer.LeasingSystem.Leasing.Application.csproj", "{2C80DFA3-76AF-49E1-BC70-CD1912BD95DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +137,22 @@ Global
 		{43FC7AB0-A635-42E1-BB57-379C2EA87EB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43FC7AB0-A635-42E1-BB57-379C2EA87EB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43FC7AB0-A635-42E1-BB57-379C2EA87EB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95C26311-A8C2-41CD-9EE5-99189706B8DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C26311-A8C2-41CD-9EE5-99189706B8DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C26311-A8C2-41CD-9EE5-99189706B8DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C26311-A8C2-41CD-9EE5-99189706B8DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C947694B-20B3-4CD0-B78E-23F8D1C0B514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C947694B-20B3-4CD0-B78E-23F8D1C0B514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C947694B-20B3-4CD0-B78E-23F8D1C0B514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C947694B-20B3-4CD0-B78E-23F8D1C0B514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB82F18-3F1E-45BF-AFCD-51E336FF5FBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB82F18-3F1E-45BF-AFCD-51E336FF5FBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB82F18-3F1E-45BF-AFCD-51E336FF5FBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB82F18-3F1E-45BF-AFCD-51E336FF5FBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C80DFA3-76AF-49E1-BC70-CD1912BD95DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C80DFA3-76AF-49E1-BC70-CD1912BD95DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C80DFA3-76AF-49E1-BC70-CD1912BD95DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C80DFA3-76AF-49E1-BC70-CD1912BD95DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -159,6 +183,10 @@ Global
 		{1003FA1B-C90D-49D9-BBF0-BD9CBBD6B0EB} = {F7356D33-7320-4DBD-8E6A-B5ACDCB64C27}
 		{1DE89A85-6446-4716-B1DF-05886FB44510} = {F7356D33-7320-4DBD-8E6A-B5ACDCB64C27}
 		{43FC7AB0-A635-42E1-BB57-379C2EA87EB0} = {F7356D33-7320-4DBD-8E6A-B5ACDCB64C27}
+		{95C26311-A8C2-41CD-9EE5-99189706B8DD} = {E1DACC7E-1E31-4226-906F-E9236192EEA0}
+		{C947694B-20B3-4CD0-B78E-23F8D1C0B514} = {E1DACC7E-1E31-4226-906F-E9236192EEA0}
+		{8DB82F18-3F1E-45BF-AFCD-51E336FF5FBA} = {E1DACC7E-1E31-4226-906F-E9236192EEA0}
+		{2C80DFA3-76AF-49E1-BC70-CD1912BD95DB} = {E1DACC7E-1E31-4226-906F-E9236192EEA0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5A9BDAFF-0EFF-4F3F-AAAC-6D6A1870914A}

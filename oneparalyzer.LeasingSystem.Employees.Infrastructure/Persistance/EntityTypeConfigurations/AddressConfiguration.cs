@@ -25,8 +25,6 @@ public sealed class AddressConfiguration : IEntityTypeConfiguration<Address>
                        id => id.Value,
                        value => new StreetId(value));
 
-        builder.Property(x => x.ApartmentNumber).IsRequired();
-
         builder.HasOne(x => x.Street).WithMany().HasForeignKey(x => x.StreetId);
     }
 }

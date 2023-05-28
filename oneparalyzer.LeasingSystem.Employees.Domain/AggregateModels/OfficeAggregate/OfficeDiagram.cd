@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="oneparalyzer.LeasingSystem.Employees.Domain.SeedWorks.Entity&lt;TId&gt;">
+    <Position X="3.25" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>SeedWorks\Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Employees.Domain.SeedWorks.AggregateRoot&lt;TId&gt;">
+    <Position X="6.5" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SeedWorks\AggregateRoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Employees.Domain.AggregateModels.OfficeAggregate.Office">
+    <Position X="9.75" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QQAAAAAAAAAgAAAAQAAABAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\OfficeAggregate\Office.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Employees.Domain.AggregateModels.CustomerAggregate.Entities.Address">
+    <Position X="0.5" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAEAAAAAAAAAEAAAAgAAAIAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\OfficeAggregate\Entities\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Employees.Domain.AggregateModels.CustomerAggregate.Entities.City">
+    <Position X="0.75" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAgAAAAEAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\OfficeAggregate\Entities\City.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Employees.Domain.AggregateModels.CustomerAggregate.Entities.Region">
+    <Position X="3.5" Y="5.5" Width="1.5" />
+    <InheritanceLine Type="oneparalyzer.LeasingSystem.Employees.Domain.SeedWorks.Entity&lt;TId&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="4.375" Y="4.574" />
+        <Point X="4.375" Y="5.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\OfficeAggregate\Entities\Region.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Employees.Domain.AggregateModels.CustomerAggregate.Entities.Street">
+    <Position X="6.5" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAEAMAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\OfficeAggregate\Entities\Street.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

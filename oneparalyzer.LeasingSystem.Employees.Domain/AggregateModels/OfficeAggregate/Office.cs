@@ -8,7 +8,7 @@ namespace oneparalyzer.LeasingSystem.Employees.Domain.AggregateModels.OfficeAggr
 
 public sealed class Office : AggregateRoot<OfficeId>
 {
-    private readonly List<DepartmentId> _departmentIds;
+    private readonly List<DepartmentId> _departmentIds = new();
 
     public Office(OfficeId id, Address address) : base(id)
     {

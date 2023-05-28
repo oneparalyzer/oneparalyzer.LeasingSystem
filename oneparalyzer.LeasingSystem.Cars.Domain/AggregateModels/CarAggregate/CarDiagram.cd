@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="oneparalyzer.LeasingSystem.Cars.Domain.AggregateModels.CarAggregate.Car">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAQICAAAIAAQAAAAAAgABIAAIACqAACAQAAwBSASAA=</HashCode>
+      <FileName>AggregateModels\CarAggregate\Car.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Cars.Domain.AggregateModels.CarAggregate.Entities.CarBrand">
+    <Position X="6.25" Y="2.25" Width="1.5" />
+    <InheritanceLine Type="oneparalyzer.LeasingSystem.Cars.Domain.SeedWorks.Entity&lt;TId&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="5.5" Y="3.026" />
+        <Point X="6.25" Y="3.026" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\CarAggregate\Entities\CarBrand.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Cars.Domain.AggregateModels.CarAggregate.Entities.CarDocument">
+    <Position X="4.5" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="oneparalyzer.LeasingSystem.Cars.Domain.SeedWorks.Entity&lt;TId&gt;" FixedToPoint="true">
+      <Path>
+        <Point X="4.75" Y="4.574" />
+        <Point X="4.75" Y="5.375" />
+        <Point X="4.812" Y="5.375" />
+        <Point X="4.812" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\CarAggregate\Entities\CarDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Cars.Domain.AggregateModels.CarAggregate.Entities.CarInsurance">
+    <Position X="7.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\CarAggregate\Entities\CarInsurance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Cars.Domain.AggregateModels.CarAggregate.Entities.CarModel">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <InheritanceLine Type="oneparalyzer.LeasingSystem.Cars.Domain.SeedWorks.Entity&lt;TId&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.125" Y="4.574" />
+        <Point X="5.125" Y="5.375" />
+        <Point X="7.875" Y="5.375" />
+        <Point X="7.875" Y="4.56" />
+        <Point X="8.25" Y="4.56" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAEAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\CarAggregate\Entities\CarModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Cars.Domain.AggregateModels.CarAggregate.Entities.CarPassport">
+    <Position X="5.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\CarAggregate\Entities\CarPassport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Cars.Domain.AggregateModels.CarAggregate.Entities.Country">
+    <Position X="2" Y="0.75" Width="1.5" />
+    <InheritanceLine Type="oneparalyzer.LeasingSystem.Cars.Domain.SeedWorks.Entity&lt;TId&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="4" Y="3.438" />
+        <Point X="2.75" Y="3.438" />
+        <Point X="2.75" Y="2.434" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AggregateModels\CarAggregate\Entities\Country.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Cars.Domain.AggregateModels.CarAggregate.Entities.СarRegistrationCertificate">
+    <Position X="3.5" Y="8.25" Width="1.5" />
+    <InheritanceLine Type="oneparalyzer.LeasingSystem.Cars.Domain.AggregateModels.CarAggregate.Entities.CarDocument" FixedFromPoint="true">
+      <Path>
+        <Point X="4.938" Y="7.819" />
+        <Point X="4.938" Y="8.01" />
+        <Point X="4.25" Y="8.01" />
+        <Point X="4.25" Y="8.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>AggregateModels\CarAggregate\Entities\СarRegistrationCertificate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Cars.Domain.SeedWorks.Entity&lt;TId&gt;">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>SeedWorks\Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Cars.Domain.SeedWorks.AggregateRoot&lt;TId&gt;">
+    <Position X="4" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SeedWorks\AggregateRoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="oneparalyzer.LeasingSystem.Cars.Domain.AggregateModels.CarAggregate.Enums.CarCategory">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApAEAAAA=</HashCode>
+      <FileName>AggregateModels\CarAggregate\Enums\CarCategory.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="oneparalyzer.LeasingSystem.Cars.Domain.AggregateModels.CarAggregate.Enums.CarEcologicalClass">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAIAAAAAAAAAACAAAAAAQBAAA=</HashCode>
+      <FileName>AggregateModels\CarAggregate\Enums\CarEcologicalClass.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="oneparalyzer.LeasingSystem.Cars.Domain.AggregateModels.CarAggregate.Enums.DocumentType">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>AggregateModels\CarAggregate\Enums\DocumentType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

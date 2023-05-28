@@ -17,8 +17,4 @@
     <ProjectReference Include="..\oneparalyzer.LeasingSystem.Employees.Domain\oneparalyzer.LeasingSystem.Employees.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Offices\Queries\" />
-  </ItemGroup>
-
 </Project>

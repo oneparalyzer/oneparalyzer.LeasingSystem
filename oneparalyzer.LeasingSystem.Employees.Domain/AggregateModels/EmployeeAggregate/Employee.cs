@@ -1,5 +1,4 @@
-﻿using oneparalyzer.LeasingSystem.Employees.Domain.AggregateModels.EmployeeAggregate.Enums;
-using oneparalyzer.LeasingSystem.Employees.Domain.AggregateModels.EmployeeAggregate.ValueObjects;
+﻿using oneparalyzer.LeasingSystem.Employees.Domain.AggregateModels.EmployeeAggregate.ValueObjects;
 using oneparalyzer.LeasingSystem.Employees.Domain.AggregateModels.PostAggregate.ValueObjects;
 using oneparalyzer.LeasingSystem.Employees.Domain.Common;
 using oneparalyzer.LeasingSystem.Employees.Domain.SeedWorks;
@@ -14,14 +13,12 @@ public sealed class Employee : AggregateRoot<EmployeeId>
     {
         ServiceNumber = serviceNumber;
         DateEmployment = DateTime.Now;
-        Status = EmployeeStatus.Hired;
         _postIds.Add(postId);
     }
 
     private Employee(EmployeeId employeeId) : base(employeeId) { }
 
     public string ServiceNumber { get; private set; }
-    public EmployeeStatus Status { get; private set; }
     public DateTime DateEmployment { get; private set; }
     public DateTime? DateDismissal { get; private set; }
     public Guid? UserId { get; private set; }
@@ -31,7 +28,11 @@ public sealed class Employee : AggregateRoot<EmployeeId>
     public void Dismiss()
     {
         DateDismissal = DateTime.Now;
-        Status = EmployeeStatus.Dismissed;
+    }
+
+    public bool IsDismissed()
+    {
+        return DateDismissal is null;
     }
 
     public void BindUser(Guid userId)

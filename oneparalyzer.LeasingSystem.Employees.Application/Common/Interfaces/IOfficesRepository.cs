@@ -9,4 +9,6 @@ public interface IOfficesRepository : IRepository<Office, OfficeId>
     Task<Result> CreateAsync(Office office, CancellationToken cancellationToken = default);
     Task<ResultWithData<IEnumerable<Office>>> GetAllAsync(CancellationToken cancellationToken = default);
     Task<Result> RemoveByIdAsync(OfficeId officeId, CancellationToken cancellationToken = default);
+    Task<ResultWithData<Office>> GetByIdAsync(OfficeId officeId, CancellationToken cancellationToken = default);
+    Task<Result> UpdateAsync(Office office, CancellationToken cancellationToken = default);
 }

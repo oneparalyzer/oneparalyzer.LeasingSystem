@@ -2,11 +2,12 @@
 using Microsoft.AspNetCore.Mvc;
 using oneparalyzer.LeasingSystem.Employees.Application.Offices.Commands.Create;
 using oneparalyzer.LeasingSystem.Employees.Application.Offices.Commands.Remove;
+using oneparalyzer.LeasingSystem.Employees.Application.Offices.Queries.GetAll;
 using oneparalyzer.LeasingSystem.Employees.Domain.Common;
 
 namespace oneparalyzer.LeasingSystem.Employees.Api.Controllers;
 
-[Route("leasing/[controller]")]
+[Route("leasing/offices")]
 [ApiController]
 public class OfficesController : ControllerBase
 {
@@ -18,9 +19,10 @@ public class OfficesController : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult GetAll()
+    public async Task<IActionResult> GetAll()
     {
-        return Ok();
+        ResultWithData<IEnumerable<GetAllOfficesDTO>> result = await _mediator.Send(new GetAllOfficesQuery());
+        return Ok(result);
     }
 
     [HttpPut("create")]

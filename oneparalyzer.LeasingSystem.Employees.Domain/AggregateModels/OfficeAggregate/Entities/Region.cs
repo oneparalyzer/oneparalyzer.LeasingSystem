@@ -11,4 +11,9 @@ public sealed class Region : Entity<RegionId>
     }
 
     public string Title { get; private set; }
+
+    public override string ToString()
+    {
+        return Title;
+    }
 }

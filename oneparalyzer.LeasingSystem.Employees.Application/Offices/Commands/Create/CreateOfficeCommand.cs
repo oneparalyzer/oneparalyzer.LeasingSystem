@@ -8,5 +8,4 @@ public record CreateOfficeCommand(
     string CityTitle,
     string StreetTitle,
     uint HouseNumber, 
-    string? HouseBuilding, 
-    string? ApartmentNumber) : IRequest<Result>;
+    string? HouseBuilding) : IRequest<Result>;

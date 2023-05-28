@@ -19,4 +19,9 @@ public sealed class Street : Entity<StreetId>
     public string Title { get; private set; }
     public CityId CityId { get; private set; }
     public City City { get; private set; }
+
+    public override string ToString()
+    {
+        return City.ToString() + " " + Title;
+    }
 }

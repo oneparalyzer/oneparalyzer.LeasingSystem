@@ -2,20 +2,27 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Entities.Address">
     <Position X="5.5" Y="0.5" Width="2.25" />
+    <InheritanceLine Type="oneparalyzer.LeasingSystem.Customers.Domain.SeedWorks.Entity&lt;TId&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="10.5" Y="3.5" />
+        <Point X="6.625" Y="3.5" />
+        <Point X="6.625" Y="2.954" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAQAAEAAAAAAAAAAAEAAAAgAAAIAAAAAAAA=</HashCode>
       <FileName>AggregateModels\CustomerAggregate\Entities\Address.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Entities.City">
-    <Position X="0.5" Y="4.25" Width="2" />
+    <Position X="0.5" Y="6" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAEAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AggregateModels\CustomerAggregate\Entities\City.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Entities.Department">
-    <Position X="4.5" Y="4.25" Width="1.25" />
+    <Position X="4.5" Y="6" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AggregateModels\CustomerAggregate\Entities\Department.cs</FileName>
@@ -23,13 +30,20 @@
   </Class>
   <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Entities.Document">
     <Position X="3" Y="0.5" Width="2.25" />
+    <InheritanceLine Type="oneparalyzer.LeasingSystem.Customers.Domain.SeedWorks.Entity&lt;TId&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="10.5" Y="3.91" />
+        <Point X="4.125" Y="3.91" />
+        <Point X="4.125" Y="3.146" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAACAEAAAAAAAAAAAAAAgAAIAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>AggregateModels\CustomerAggregate\Entities\Document.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Entities.Region">
-    <Position X="2.75" Y="4.25" Width="1.5" />
+    <Position X="2.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>AggregateModels\CustomerAggregate\Entities\Region.cs</FileName>
@@ -44,20 +58,44 @@
   </Class>
   <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Customer">
     <Position X="0.5" Y="0.5" Width="2.25" />
+    <InheritanceLine Type="oneparalyzer.LeasingSystem.Customers.Domain.SeedWorks.AggregateRoot&lt;TId&gt;" FixedFromPoint="true">
+      <Path>
+        <Point X="5" Y="4.938" />
+        <Point X="1.625" Y="4.938" />
+        <Point X="1.625" Y="3.982" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>SAAAAAAAAAAAAICAAAAAAAwAAAAAAAACAAAAAACAAAA=</HashCode>
       <FileName>AggregateModels\CustomerAggregate\Customer.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.SeedWorks.Entity&lt;TId&gt;">
+    <Position X="10.5" Y="3.25" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>SeedWorks\Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oneparalyzer.LeasingSystem.Customers.Domain.SeedWorks.AggregateRoot&lt;TId&gt;">
+    <Position X="5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SeedWorks\AggregateRoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Enum Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Enums.DocumentType">
-    <Position X="8" Y="4.25" Width="1.5" />
+    <Position X="8" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
       <FileName>AggregateModels\CustomerAggregate\Enums\DocumentType.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="oneparalyzer.LeasingSystem.Customers.Domain.AggregateModels.CustomerAggregate.Enums.Gender">
-    <Position X="6" Y="4.25" Width="1.75" />
+    <Position X="6" Y="6" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
       <FileName>AggregateModels\CustomerAggregate\Enums\Gender.cs</FileName>

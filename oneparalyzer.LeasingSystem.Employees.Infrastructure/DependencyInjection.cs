@@ -20,7 +20,7 @@ public static class DependencyInjection
     public static IServiceCollection AddPersistance(this IServiceCollection services, ConfigurationManager configuration)
     {
         string? connectionString = configuration.GetConnectionString("DefaultConnection");
-        services.AddDbContext<EmployeesDbContext>(options => 
+        services.AddDbContext<CompaniesDbContext>(options => 
             options.UseSqlServer(connectionString));
         return services;
     }
@@ -28,6 +28,7 @@ public static class DependencyInjection
     public static IServiceCollection AddRepositories(this IServiceCollection services)
     {
         services.AddScoped<IOfficesRepository, OfficesRepository>();
+        services.AddScoped<IDepartmentsRepository, DepartmentsRepository>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         return services;
     }

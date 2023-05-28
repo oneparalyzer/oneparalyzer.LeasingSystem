@@ -18,11 +18,9 @@ public sealed class OfficeConfiguration : IEntityTypeConfiguration<Office>
                    id => id.Value,
                    value => new OfficeId(value));
 
-        builder.Property(x => x.Id).ValueGeneratedNever();
-
         builder.OwnsMany(x => x.DepartmentIds, departmentIdBuilder =>
         {
-            departmentIdBuilder.ToTable("DepartmentIds");
+            departmentIdBuilder.ToTable("OfficeDepartmentIds");
 
             departmentIdBuilder
                 .WithOwner()

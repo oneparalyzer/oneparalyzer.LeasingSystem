@@ -4,15 +4,20 @@ namespace oneparalyzer.LeasingSystem.Employees.Infrastructure.Persistance.Reposi
 
 public sealed class UnitOfWork : IUnitOfWork
 {
-    private readonly EmployeesDbContext _context;
+    private readonly CompaniesDbContext _context;
 
-    public UnitOfWork(EmployeesDbContext context, IOfficesRepository officesRepository)
+    public UnitOfWork(
+        CompaniesDbContext context, 
+        IOfficesRepository officesRepository,
+        IDepartmentsRepository departmentsRepository)
     {
         _context = context;
         OfficesRepository = officesRepository;
+        DepartmentsRepository = departmentsRepository;
     }
 
     public IOfficesRepository OfficesRepository { get; }
+    public IDepartmentsRepository DepartmentsRepository { get; }
 
     public Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
     {

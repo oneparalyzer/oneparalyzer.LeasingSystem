@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using MediatR;
 using oneparalyzer.LeasingSystem.Employees.Application.Common.Interfaces;
+using oneparalyzer.LeasingSystem.Employees.Domain.AggregateModels.CustomerAggregate.Entities;
 using oneparalyzer.LeasingSystem.Employees.Domain.AggregateModels.OfficeAggregate;
+using oneparalyzer.LeasingSystem.Employees.Domain.AggregateModels.OfficeAggregate.ValueObjects;
 using oneparalyzer.LeasingSystem.Employees.Domain.Common;
 
 namespace oneparalyzer.LeasingSystem.Employees.Application.Offices.Commands.Create;
@@ -19,24 +21,23 @@ public sealed class CreateOfficeCommandHandler : IRequestHandler<CreateOfficeCom
 
     public async Task<Result> Handle(CreateOfficeCommand command, CancellationToken cancellationToken)
     {
-        /*var office = new Office(
-            new OfficeId(Guid.Empty),
+        var office = new Office(
+            new OfficeId(Guid.NewGuid()),
             new Address(
-                new AddressId(Guid.Empty),
+                new AddressId(Guid.NewGuid()),
                 command.HouseNumber,
                 command.HouseBuilding,
-                command.ApartmentNumber,
                 new Street(
-                    new StreetId(Guid.Empty),
+                    new StreetId(Guid.NewGuid()),
                     command.StreetTitle,
                     new City(
-                        new CityId(Guid.Empty),
+                        new CityId(Guid.NewGuid()),
                         command.CityTitle,
                         new Region(
-                            new RegionId(Guid.Empty),
-                            command.RegionTitle)))));*/
+                            new RegionId(Guid.NewGuid()),
+                            command.RegionTitle)))));
 
-        var office = _mapper.Map<Office>(command);
+        //var office = _mapper.Map<Office>(command);
         Result result = await _unitOfWork.OfficesRepository.CreateAsync(office, cancellationToken);
         if (result.IsOk)
         {

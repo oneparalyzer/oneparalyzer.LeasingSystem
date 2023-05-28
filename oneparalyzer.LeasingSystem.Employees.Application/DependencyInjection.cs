@@ -11,6 +11,7 @@ public static class DependencyInjection
     {
         services.AddValidation();
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
+        services.AddMediatR(x => x.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
         return services;
     }
 

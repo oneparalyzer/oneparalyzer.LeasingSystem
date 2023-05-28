@@ -18,4 +18,9 @@ public sealed class City : Entity<CityId>
     public string Title { get; private set; }
     public RegionId RegionId { get; private set; }
     public Region Region { get; private set; }
+
+    public override string ToString()
+    {
+        return Region.ToString() + " " + Title;
+    }
 }
